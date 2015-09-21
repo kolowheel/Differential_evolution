@@ -103,7 +103,6 @@ object Main {
     val res2 = Future((curriedGA(codeGrayMerge), "code gray"))
     val res3 = Future(curriedGA(fooMerge), "mix")
     println(Await.result(Future.sequence(Seq(res1, res2, res3)), Duration.Inf).mkString("\n"))
-    Success
 
   }
 
